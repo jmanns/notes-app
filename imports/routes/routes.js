@@ -1,3 +1,4 @@
+import { Meteor } from 'meteor/meteor'
 import React from 'react'
 import { Router, Route, browserHistory } from 'react-router'
 
@@ -37,6 +38,7 @@ export const routes = (
     <Route path='/' component={Login} onEnter={onEnterPublicPage} />
     <Route path='/signup' component={Signup} onEnter={onEnterPublicPage} />
     <Route path='/dashboard' component={Dashboard} onEnter={onEnterPrivatePage} />
+    <Route path='/dashboard/:id' component={Dashboard} onEnter={onEnterPrivatePage} />
     <Route path="*" component={NotFound} />
   </Router>
 )
