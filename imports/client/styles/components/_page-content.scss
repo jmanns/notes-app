@@ -3,18 +3,16 @@
   height: $page-content-height;
   margin: 0 auto;
   max-width: $site-max-width;
-  padding: $space;
+  padding: $space-large $space;
 }
 
 .page-content__sidebar {
   display: flex;
+  padding-right: $space-large;
   width: $page-content-sidebar-width;
-  border: 1px solid #000;
 }
 
 .page-content__main {
   display: flex;
   width: $page-content-main-width;
-  border: 1px solid #000;
-  margin-left: 5rem;
 }
