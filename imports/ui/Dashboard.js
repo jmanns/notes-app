@@ -7,7 +7,7 @@ import Editor from './Editor'
 export default () => {
   return (
     <div>
-      <PrivateHeader title="Dashboard" />
+      <PrivateHeader title="N0tes" />
       <div className="page-content">
         <div className="page-content__sidebar">
           <NoteList />
