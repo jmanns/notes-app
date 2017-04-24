@@ -17,8 +17,8 @@ const onLeaveNotePage = () => {
 }
 
 export const onAuthChange = (isAuthenticated, currentPagePrivacy) => {
-    const isUnauthenticatedPage = currentPagePrivacy === 'unauth'
-    const isAuthenticatedPage = currentPagePrivacy === 'auth'
+  const isUnauthenticatedPage = currentPagePrivacy === 'unauth'
+  const isAuthenticatedPage = currentPagePrivacy === 'auth'
 
   // handle redirects
   if (isAuthenticated && isUnauthenticatedPage) {

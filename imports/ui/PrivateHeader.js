@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import { Accounts } from 'meteor/accounts-base'
 import { createContainer } from 'meteor/react-meteor-data'
 import { Session } from 'meteor/session'
@@ -17,10 +18,10 @@ export const PrivateHeader = (props) => {
 }
 
 PrivateHeader.propTypes = {
-  title: React.PropTypes.string.isRequired,
-  handleLogout: React.PropTypes.func.isRequired,
-  handleNavToggle: React.PropTypes.func.isRequired,
-  isNavOpen: React.PropTypes.bool.isRequired
+  title: PropTypes.string.isRequired,
+  handleLogout: PropTypes.func.isRequired,
+  handleNavToggle: PropTypes.func.isRequired,
+  isNavOpen: PropTypes.bool.isRequired
 }
 
 export default createContainer(() => {
